@@ -24,7 +24,7 @@
 2. Start the front-api-service using Docker.
     docker network create tracing(ignore this step if already done)
     docker pull rduttaxebia/otel-demo-api-service:latest
-    docker run --name front-service --network tracing -p 8081:8081 rduttaxebia/otel-demo-api-service:latest
+    docker run --name front-service --network tracing -p 8080:8080 rduttaxebia/otel-demo-api-service:latest
 ```
 
 ## Enable OpenTelemetry
