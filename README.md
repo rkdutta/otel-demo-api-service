@@ -9,7 +9,7 @@
 ```
 
 
-### Execute
+### Execute using IDE/command line
 ```
 1. Start the customer service first (reference link given below)
 2. Then Start the front api service using command: mvn spring-boot:run
@@ -17,6 +17,15 @@
 ```
 ###### Reference: [customer service](https://github.com/rkdutta/otel-demo-customer-service)
 
+
+### Execute using Docker
+```
+1. Start the customer service. . Reference link is mentioned above.
+2. Start the front-api-service using Docker.
+    docker network create tracing(ignore this step if already done)
+    docker pull rduttaxebia/otel-demo-customer-service:latest
+    docker run --name customer-service --network tracing -p 8081:8081 rduttaxebia/otel-demo-customer-service:latest
+```
 
 ## Enable OpenTelemetry
 

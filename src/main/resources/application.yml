@@ -1,10 +1,16 @@
 server.port: 8080
 
+#addressClient:
+#  baseUrl: http://localhost:8081
+#
+#customerClient:
+#  baseUrl: http://localhost:8081
+
 addressClient:
-  baseUrl: http://localhost:8081
+  baseUrl: http://${CUSTOMER_SVC:localhost}:8081
 
 customerClient:
-  baseUrl: http://localhost:8081
+  baseUrl: http://${CUSTOMER_SVC:localhost}:8081
 
 spring:
   application:
