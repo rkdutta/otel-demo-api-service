@@ -41,7 +41,7 @@
 		</dependency>
 ```
 
-2. Add/append the following in [application.yml](/src/main/resources/application.yml)
+2. Add/append the following in [application.yml](src/main/resources/application.yml)
 
 ```yaml
 spring:
