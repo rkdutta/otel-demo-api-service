@@ -15,3 +15,10 @@ customerClient:
 spring:
   application:
     name: front-service
+
+# Actuator
+management.endpoints.web.exposure.include: "*"
+management.endpoint.metrics.enabled: true
+management.metrics.use-global-registry: true
+management.health.probes.enabled: true
+management.endpoint.health.show-details: always
