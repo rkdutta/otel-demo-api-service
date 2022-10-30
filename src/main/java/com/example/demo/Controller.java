@@ -33,7 +33,7 @@ public class Controller {
         logger.info("COLLECTING CUSTOMER AND ADDRESS WITH ID {} FROM UPSTREAM SERVICE", customerId);
         Customer customer = customerClient.getCustomer(customerId);
         Address address = addressClient.getAddressForCustomerId(customerId);
-        registry.counter("visits.total", "name", "hits").increment();
+        registry.counter("visits.total", "name", "frontend").increment();
         return new CustomerAndAddress(customer, address);
     }
 
